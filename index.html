@@ -1,131 +1,100 @@
-<!--Autor: Luiz Daniel - 02/10--!>
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Investigação: O Mistério de Jason</title>
-</head>
+<html>
+    <head>
+        <title>Alura Plus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" contet="width=advice-width, initial scale=1" >
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
 <body>
-    <main>
-        <!-- Cena inicial -->
-        <div class="passo ativo" id="passo-0">
-            <p>Você chegou à cena do crime, onde o corpo de Jason foi encontrado à beira do rio. O que você fará primeiro?</p>
-            <button class="btn-proximo" data-proximo="1">Investigar o Local</button>
-            <button class="btn-proximo" data-proximo="2">Falar com as Testemunhas</button>
-        </div>
+<section class="principal container">
+    <div class="container_caixa">
+        <h1 class="container_titulo">Com o Combo+,você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
+        <img src="img/Combo.png" alt="o combo+ é a junção do alura+ e o alura língua" class="container_imagem">
+        <a href="www.alura.com.br" class="container_botao">Assine por 12x de R$ 120,00*</a>
+        <a href="www.alura.com.br" class="container_botao botao_secundario">Assinar somente o Alura+</a>
+        <p class="container_aviso">*O preço pode variar caso a assinatura seja feita em outros planos</p>
+    </div>
+</section>
 
-        <!-- Decisão 1 -->
-        <div class="passo" id="passo-1">
-            <p>Você decide investigar o local. Há um casaco de Jason e marcas de pneu próximas. Qual pista você seguirá?</p>
-            <button class="btn-proximo" data-proximo="3">Seguir a pista da floresta</button>
-            <button class="btn-proximo" data-proximo="4">Seguir as marcas de pneu</button>
-        </div>
+<section class="container secundario">
+    <img src="img/Plataformas.png" alt="Um monitor e um celular com a alura plus aberta" classs="secundario_imagem">
+    <div class="container_descricao">
+        <h2 class="descricao_titulo">Assista do seu jeito</h2>
+        <p class="descricao_texto">Aproveite a tela grande da TV ou assita no tablet, laptop, celular e outros
+            aparelhos. Nossa seleção de cursos não para de crescer.</p>
+    </div>
+</section>
 
-        <div class="passo" id="passo-2">
-            <p>Você conversa com as testemunhas Betty, Jughead e Veronica. Betty menciona que Jason estava brigando com Polly. O que você fará?</p>
-            <button class="btn-proximo" data-proximo="5">Interrogar Polly</button>
-            <button class="btn-proximo" data-proximo="6">Seguir outra pista</button>
-        </div>
+<section class="container secundario">
+    <div class="container_descricao">
+        <p class="descricao_texto">
+            Só o combo+ oferece Alura+ e Alura Língua juntos para você ter acesso a diversos cursos de diversas áreas da 
+            tecnologia e aprender inglês ou espanhol, onde e como quiser.
+        </p>
+        <a href="www.alura.com.br" class="container_botao secundario_botao" container>Assine o Combo+</a>
+    </div>
+    <img src="img/Telas.png" alt="Tela do alura+ e alura língua" class="secundario_imagem">
+</section>
 
-        <!-- Opções de pistas -->
-        <div class="passo" id="passo-3">
-            <p>Na floresta, você encontra marcas de luta. O que você faz agora?</p>
-            <button class="btn-proximo" data-proximo="7">Seguir a pista para o Requil</button>
-            <button class="btn-proximo" data-proximo="8">Voltar para investigar o local</button>
-        </div>
+<section class="container secundario">
+    <img src="img/Notebook.png" alt="Notebook com a página do curso HTML5 e CSS3 da Alura aberta"
+        class="secundario__imagem">
+    <div class="container__descricao">
+        <h2 class="descricao__titulo">Baixe seus cursos</h2>
+        <p class="descricao__texto">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com
+            você, até mesmo sem internet.</p>
+    </div>
+</section>
 
-        <div class="passo" id="passo-4">
-            <p>Seguindo as marcas de pneu, você encontra um carro suspeito. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="9">Investigar o carro</button>
-            <button class="btn-proximo" data-proximo="8">Voltar para investigar o local</button>
-        </div>
+<section class="dispositivos">
+    <h2 class="dispositivos_titulo">Disponível nos seus despositivos favoritos</h2>
+    <ul class="dispositivos_lista">
+        <li>
+            <img src="img/tv.png" alt="Íncone de televisão">
+            <h3 class="lista_item">TV</h3>
+        </li>
+        <li>
+            <img src="img/computador.png" alt="Ícone de computador">
+            <h3>Computador</h3>
+        </li>
+        <li>
+            <img src="img/celular.png">
+            <h3 class="lista_item">Celular</h3>
+        </li>
+    </ul>
+</section>
 
-        <!-- Opções de investigação -->
-        <div class="passo" id="passo-5">
-            <p>Polly menciona um conflito com Jason. O que você faz?</p>
-            <button class="btn-proximo" data-proximo="10">Seguir a pista de Polly</button>
-            <button class="btn-proximo" data-proximo="11">Investigar outra pista</button>
-        </div>
-
-        <div class="passo" id="passo-6">
-            <p>Você decide investigar outra pista. O que faz agora?</p>
-            <button class="btn-proximo" data-proximo="12">Voltar para investigar o local</button>
-            <button class="btn-proximo" data-proximo="13">Investigar os Serpentes</button>
-        </div>
-
-        <!-- Opções finais -->
-        <div class="passo" id="passo-7">
-            <p>No Requil, você encontra mais evidências. Quem você acha que matou Jason?</p>
-            <button class="btn-proximo" data-proximo="14">Betty</button>
-            <button class="btn-proximo" data-proximo="15">Polly</button>
-            <button class="btn-proximo" data-proximo="16">Cheryl</button>
-            <button class="btn-proximo" data-proximo="17">Serpentes</button>
-        </div>
-
-        <div class="passo" id="passo-8">
-            <p>Você decide voltar e investigar mais. Escolha a próxima ação.</p>
-            <button class="btn-proximo" data-proximo="1">Investigar o Local</button>
-            <button class="btn-proximo" data-proximo="2">Falar com as Testemunhas</button>
-        </div>
-
-        <div class="passo" id="passo-9">
-            <p>O carro estava vazio e não trouxe novas pistas. Tente outra opção.</p>
-            <button class="btn-proximo" data-proximo="8">Voltar para investigar o local</button>
-        </div>
-
-        <div class="passo" id="passo-10">
-            <p>Você decide seguir a pista de Polly. Chegou a hora de tomar uma decisão final.</p>
-            <button class="btn-proximo" data-proximo="7">Adivinhar quem matou Jason</button>
-        </div>
-
-        <div class="passo" id="passo-11">
-            <p>Você decide investigar outra pista. Acompanhe as pistas para uma nova decisão.</p>
-            <button class="btn-proximo" data-proximo="7">Adivinhar quem matou Jason</button>
-        </div>
-
-        <div class="passo" id="passo-12">
-            <p>Você decide voltar e investigar mais. Escolha a próxima ação.</p>
-            <button class="btn-proximo" data-proximo="1">Investigar o Local</button>
-            <button class="btn-proximo" data-proximo="2">Falar com as Testemunhas</button>
-        </div>
-
-        <div class="passo" id="passo-13">
-            <p>Escolha a próxima ação.</p>
-            <button class="btn-proximo" data-proximo="7">Adivinhar quem matou Jason</button>
-        </div>
-
-        <div class="passo" id="passo-14">
-            <p>Você achou que Betty era a culpada, mas as evidências mostram que ela estava em outro lugar na noite do crime. O verdadeiro culpado ainda está em liberdade.</p>
-            <button class="btn-proximo" data-proximo="18">Tentar novamente</button>
-        </div>
-
-        <div class="passo" id="passo-15">
-            <p>Você acertou! Polly foi a responsável pela morte de Jason devido ao seu relacionamento conturbado. O caso está resolvido.</p>
-            <button class="btn-proximo" data-proximo="19">Encerrar</button>
-        </div>
-
-        <div class="passo" id="passo-16">
-            <p>Você achou que Cheryl era a culpada, mas as evidências mostram que ela não tinha motivo para matar Jason. O verdadeiro culpado ainda está em liberdade.</p>
-            <button class="btn-proximo" data-proximo="18">Tentar novamente</button>
-        </div>
-
-        <div class="passo" id="passo-17">
-            <p>Você achou que os Serpentes eram os culpados, mas eles estavam apenas envolvidos no tráfico de drogas e não no assassinato de Jason. O verdadeiro culpado ainda está em liberdade.</p>
-            <button class="btn-proximo" data-proximo="18">Tentar novamente</button>
-        </div>
-
-        <div class="passo" id="passo-18">
-            <p>Escolha outra pessoa para tentar adivinhar novamente.</p>
-            <button class="btn-proximo" data-proximo="13">Voltar e escolher outra opção</button>
-        </div>
-
-        <div class="passo" id="passo-19">
-            <p>Obrigado por jogar! Se você acertou, parabéns, você pode ser um grande detetive! Se errou, talvez seja hora de explorar uma nova carreira. Até a próxima!</p>
-        </div>
-    </main>
-
-    <script src="script.js"></script>
+<footer class="rodape">
+    <img src="img/Logo.png" alt="Alura+" class="rodape_logo">
+    <ul class="rodape_lista">
+        <li class="lista_link">
+            <a href="#">Idioma</a>
+        </li>
+        <li class="lista_link">
+            <a href="#">Dispositivos compatíveis</a>
+        </li>
+        <li class="lista_link">
+            <a href="#">Contrato de assinatura</a>
+        </li>
+        <li class="lista_link">
+            <a href="#">Politica de privacidade</a>
+        </li>
+        <li class="lista_link">
+            <a href="#">Proteção de dados no Brasil</a>
+        </li>
+        <li class="lista_link">
+            <a href="#">Anuncios personalizados</a>
+        </li>
+        <li class="lista_link">
+            <a href="#">Ajuda</a>
+        </li>
+    </ul>
+    <p class="rodape_texto">® 2021 Alura, Alura+ e Alura Língua. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.</p>
+    <p class="rodape_texto">Alusa+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Alura+ é comercializado por Aovs Sistemas de Informática S.A., Rua Vergueiro, 3185 - Liberdade, São Paulo - SP, 04101-300, Brasil e CNPJ 05.555.382/0001.33</p>
+</footer>
 </body>
 </html>
